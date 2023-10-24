@@ -8,17 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		52BD90452AE82B67005671C5 /* ComposableNavigationDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD90442AE82B67005671C5 /* ComposableNavigationDemoApp.swift */; };
-		52BD90472AE82B67005671C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD90462AE82B67005671C5 /* ContentView.swift */; };
 		52BD90492AE82B69005671C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52BD90482AE82B69005671C5 /* Assets.xcassets */; };
 		52BD904C2AE82B69005671C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52BD904B2AE82B69005671C5 /* Preview Assets.xcassets */; };
+		52BD90542AE82BC0005671C5 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 52BD90532AE82BC0005671C5 /* ComposableArchitecture */; };
+		52BD90562AE82BCF005671C5 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD90552AE82BCF005671C5 /* Navigation.swift */; };
+		52BD90582AE831D0005671C5 /* RootFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD90572AE831D0005671C5 /* RootFeature.swift */; };
+		52BD905A2AE85181005671C5 /* ColorsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD90592AE85181005671C5 /* ColorsFeature.swift */; };
+		52BD905C2AE851BB005671C5 /* TextFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD905B2AE851BB005671C5 /* TextFeature.swift */; };
+		52BD905E2AE853DF005671C5 /* TabFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD905D2AE853DF005671C5 /* TabFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52BD90412AE82B67005671C5 /* ComposableNavigationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComposableNavigationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BD90442AE82B67005671C5 /* ComposableNavigationDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableNavigationDemoApp.swift; sourceTree = "<group>"; };
-		52BD90462AE82B67005671C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		52BD90482AE82B69005671C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52BD904B2AE82B69005671C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52BD90552AE82BCF005671C5 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		52BD90572AE831D0005671C5 /* RootFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFeature.swift; sourceTree = "<group>"; };
+		52BD90592AE85181005671C5 /* ColorsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsFeature.swift; sourceTree = "<group>"; };
+		52BD905B2AE851BB005671C5 /* TextFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFeature.swift; sourceTree = "<group>"; };
+		52BD905D2AE853DF005671C5 /* TabFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52BD90542AE82BC0005671C5 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +62,11 @@
 			isa = PBXGroup;
 			children = (
 				52BD90442AE82B67005671C5 /* ComposableNavigationDemoApp.swift */,
-				52BD90462AE82B67005671C5 /* ContentView.swift */,
+				52BD905D2AE853DF005671C5 /* TabFeature.swift */,
+				52BD90572AE831D0005671C5 /* RootFeature.swift */,
+				52BD90592AE85181005671C5 /* ColorsFeature.swift */,
+				52BD905B2AE851BB005671C5 /* TextFeature.swift */,
+				52BD90552AE82BCF005671C5 /* Navigation.swift */,
 				52BD90482AE82B69005671C5 /* Assets.xcassets */,
 				52BD904A2AE82B69005671C5 /* Preview Content */,
 			);
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = ComposableNavigationDemo;
+			packageProductDependencies = (
+				52BD90532AE82BC0005671C5 /* ComposableArchitecture */,
+			);
 			productName = ComposableNavigationDemo;
 			productReference = 52BD90412AE82B67005671C5 /* ComposableNavigationDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 52BD90382AE82B67005671C5;
+			packageReferences = (
+				52BD90522AE82BC0005671C5 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 52BD90422AE82B67005671C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52BD90472AE82B67005671C5 /* ContentView.swift in Sources */,
+				52BD90582AE831D0005671C5 /* RootFeature.swift in Sources */,
+				52BD905C2AE851BB005671C5 /* TextFeature.swift in Sources */,
+				52BD905E2AE853DF005671C5 /* TabFeature.swift in Sources */,
+				52BD90562AE82BCF005671C5 /* Navigation.swift in Sources */,
+				52BD905A2AE85181005671C5 /* ColorsFeature.swift in Sources */,
 				52BD90452AE82B67005671C5 /* ComposableNavigationDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52BD90522AE82BC0005671C5 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52BD90532AE82BC0005671C5 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52BD90522AE82BC0005671C5 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52BD90392AE82B67005671C5 /* Project object */;
 }
